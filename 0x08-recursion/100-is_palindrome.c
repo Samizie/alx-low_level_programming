@@ -20,7 +20,8 @@ int _strlen(char *str)
  * Return: 1 if palindrome 0 if not
  */
 int check_palindrome(int l, int r, char *p)
-{if (l >= r)
+{
+	if (l >= r)
 	return (1);
 	else if (p[l] != p[r])
 		return (0);
@@ -34,8 +35,8 @@ int check_palindrome(int l, int r, char *p)
  * Return: 1 if palindrome, 0 if not
  */
 int is_palindrome(char *s)
-{
-	int i;
+{int i;
+	
 	i = _strlen(s) - 1;
 	return (check_palindrome(0, i, s));
 }
