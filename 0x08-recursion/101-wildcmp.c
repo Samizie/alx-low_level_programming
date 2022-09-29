@@ -42,7 +42,6 @@ char *wildcard(char *s3, char *s4)
  */
 int wildcmp(char *s1, char *s2)
 {char *p;
-	
 	if (*s2 == '*' && *(s2 + 1) == '\0')
 		return (1);
 	else if (*s2 == '*' && *(s2 + 1) == '*')
